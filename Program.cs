@@ -27,15 +27,15 @@ void ShowArray(string[] array)
         Console.Write(array[i] + " ");
     Console.WriteLine();
 }
-string[] ArrayResult (string[] array) //ResultArray
+string[] ArrayResult (string[] array) 
 {
-    int a = 0; // c
-    int b = 0; // j
+    int a = 0; 
+    int b = 0;
     for (int i = 0; i < array.Length; i += 1)
     {
         if (array[i].Length <= 3) a += 1;
     }
-    string[] arrRes = new string[a]; //arrayRes
+    string[] arrRes = new string[a]; 
     for (int i = 0; i < array.Length; i += 1)
      {
         if (array[i].Length <= 3)
@@ -46,7 +46,7 @@ string[] ArrayResult (string[] array) //ResultArray
     }
     return arrRes;
 }
-string[] arrFaсt = CreateArray(); //arrayFaсt
+string[] arrFaсt = CreateArray(); 
 Console.WriteLine();
 Console.WriteLine("Указанный массив:");
 ShowArray(arrFaсt);
